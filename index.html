@@ -98,7 +98,35 @@
                 <li class="breadcrumb-item"><a href="#">Administración de personal</a></li>
             </ul>
         </div>
-        
+        <div class="container">
+            <!-- <h1>Contenido de tu pagina</h1> -->
+            <div class="row mt-5">
+                <div class="col-sm-12">
+                    <form>
+                        <div class="form-group">
+                            <label>Pelicula</label>
+                            <input type="text" class="form-control" id="txtPelicula">
+                        </div>
+                        <button onclick="guardar()" class="btn btn-primary btn-block" type="button">Guardar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-12">
+                    <h3>Lista de peliculas</h3>
+                    <table class="table table-bordered" aria-describedby="peliculas">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Pelicula</th>
+                                <th width="mx-auto">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tblPeliculas">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Essential javascripts for application to work-->
